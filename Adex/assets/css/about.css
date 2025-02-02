@@ -1,0 +1,60 @@
+.about .container {
+    display: grid;
+    gap: 5rem;
+}
+
+.about .section-title {
+    margin-block-end: 3.5rem;
+}
+
+.accordion-card .card-title {
+    padding-block-end: 2rem;
+}
+
+.accordion-card .accordion-btn {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.accordion-btn ion-icon {
+    font-size: 1.5rem;
+    color: var(--blue-crayola);
+    transition: var(--transition-1);
+}
+
+
+.accordion-card:is(.expanded) .accordion-btn ion-icon {
+    transform: rotate(0.5turn);
+}
+
+.accordion-btn .span {
+    transition: var(--transition-1);
+}
+
+.accordion-btn:is(:hover, :focus-visible) .span,
+.accordion-card:is(.expanded) .accordion-btn .span {
+    color: var(--violet-blue-crayola);
+}
+
+.accordion-text {
+    padding-inline-start: 2.4rem;
+    max-height: 0;
+    overflow: hidden;
+
+}
+
+.accordion-card:is(.expanded) .accordion-text {
+    max-height: max-content;
+    padding-block-end: 2rem;
+}
+
+
+/* *Responsive for large than 768px screen */
+
+@media(min-width:768px) {
+    .about .container {
+        grid-template-columns: 1fr 0.8fr;
+        align-items: center;
+    }
+}

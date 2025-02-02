@@ -1,0 +1,71 @@
+:root {
+    /* TODO: Colors */
+
+    --violet-blue-crayola: #757ed1;
+    --dark-cornflower-blue_a7: #083d8112;
+    --white: #ffffff;
+    --white_a3: #ffffff08;
+    --white_a8: #ffffff14;
+    --white_a12: #ffffff1f;
+    --white_a70: #ffffffb3;
+    --cultured: #f6f7f9;
+    --lavender-web: #e8eaf8;
+    --cadet-blue-crayola: #a9afbc;
+    --cadet-blue-crayola_a20: #a4aec633;
+    --charcoal: #343e51;
+    --raisin-black: #1f2329;
+    --light-gray: #c9c9c9;
+    --blue-crayola: #3e77e0;
+    --black-coral: #60697b;
+
+
+    /* TODO: Typography */
+
+    --ff-manrope: 'Manrope', sans-serif;
+
+    --fs-1: calc(2.7rem + 1.38vw);
+    --fs-2: calc(2.6rem + .66vw);
+    --fs-3: 2.2rem;
+    --fs-4: 1.9rem;
+    --fs-5: 1.8rem;
+    --fs-6: 1.7rem;
+    --fs-7: 1.5rem;
+    --fs-8: 1.4rem;
+
+    --fw-700: 700;
+
+
+    /*TODO: Spacing */
+    --section-padding: 9rem;
+
+    /*TODO: Shadow */
+
+    --shadow-1: 0 0 20px #1f23290d;
+    --shadow-2: 0 0 0 0.05rem #083d8114, 0 0 1.25rem #1f23290f;
+    --shadow-3: 0 0 1.25rem #1f23290a;
+
+
+    /* TODO: Border Radius */
+
+    --radius-circle: 50%;
+    --radius-pill: 100px;
+    --radius-10: 10px;
+    --radius-8: 8px;
+    --radius-6: 6px;
+
+
+    /*TODO: Transition */
+
+    --transition-1: 0.25s ease;
+    --transition-2: 0.5s ease;
+    --transition-3: 0.3s ease-in-out;
+}
+
+
+/* *Responsive for large than 768px screen */
+
+@media(min-width:768px) {
+    :root {
+        --section-padding: 12rem;
+    }
+}

@@ -1,0 +1,39 @@
+.cta {
+    background-color: var(--charcoal);
+    border-block-end: 1px solid var(--cadet-blue-crayola_a20);
+}
+
+.cta .container {
+    margin-block: 10.8rem 6rem;
+}
+
+.cta .section-title {
+    color: var(--white);
+    margin-block-end: 3rem;
+}
+
+.cta .btn {
+    background-color: var(--violet-blue-crayola);
+    color: var(--white);
+    border: none;
+}
+
+
+/* *Responsive for large than 992px screen */
+
+@media(min-width:992px) {
+    .cta .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .cta .btn {
+        max-width: max-content;
+    }
+
+    .cta .section-title {
+        max-width: 32ch;
+        margin-block-end: 0;
+    }
+}
