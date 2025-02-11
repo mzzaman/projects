@@ -1,0 +1,89 @@
+*::before,
+*,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--bg-oxford-blue-2);
+    color: var(--text-shadow-blue);
+    font-family: var(--fontFamily-noto_sans);
+    font-size: var(--fontSize-4);
+    line-height: var(--lineHeight-4);
+    overflow-y: overlay;
+
+}
+
+body:is(.nav-active) {
+    overflow: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 10px;
+}
+
+li {
+    list-style: none;
+}
+
+a,
+img,
+span,
+input,
+button,
+ion-icon {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    height: auto;
+}
+
+input,
+button {
+    background: none;
+    border: none;
+    font: inherit;
+    color: inherit;
+}
+
+input {
+    width: 100%;
+    outline: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+ion-icon {
+    pointer-events: none;
+}
+
+address {
+    font-style: normal;
+}
+
+/* *Scroll Bar  */
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--text-carolina-blue);
+    border-radius: var(--radius-pill);
+}

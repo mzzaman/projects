@@ -1,0 +1,130 @@
+/*-----------------------------------*\
+  #style.css
+\*-----------------------------------*/
+
+/**
+ * copyright 2025 Moniruzzaman;
+ */
+
+
+
+
+
+/*-----------------------------------*\
+  #CUSTOM PROPERTY
+\*-----------------------------------*/
+@import url('variable.css');
+
+
+
+
+/*-----------------------------------*\
+  #RESET
+\*-----------------------------------*/
+@import url(reset.css);
+
+/*-----------------------------------*\
+  #TYPOGRAPHY
+\*-----------------------------------*/
+@import url('typography.css');
+
+/*-----------------------------------*\
+  #REUSED STYLE
+\*-----------------------------------*/
+@import url('components.css');
+
+
+
+
+/*-----------------------------------*\
+  #HEADER
+\*-----------------------------------*/
+@import url('header.css');
+
+
+
+
+/*-----------------------------------*\
+  #HERO
+\*-----------------------------------*/
+@import url('hero.css');
+
+
+
+
+/*-----------------------------------*\
+  #TOPICS
+\*-----------------------------------*/
+@import url('topics.css');
+
+
+
+
+/*-----------------------------------*\
+  #FEATURED
+\*-----------------------------------*/
+@import url('featured.css');
+
+
+
+
+/*-----------------------------------*\
+  #POPULAR TAGS
+\*-----------------------------------*/
+@import url('tags.css');
+
+
+
+
+/*-----------------------------------*\
+  #RECENT POST
+\*-----------------------------------*/
+@import url('recent-post.css');
+
+
+
+
+/*-----------------------------------*\
+  #FOOTER
+\*-----------------------------------*/
+@import url('footer.css');
+
+
+
+
+/*-----------------------------------*\
+  #BACK TO TOP
+\*-----------------------------------*/
+.back-to-top-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: var(--bg-prussian-blue);
+  border-radius: var(--radius-circle);
+  border: 3px solid var(--bg-carolina-blue);
+  display: grid;
+  place-items: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: var(--transition-1);
+}
+
+.back-to-top-btn:is(:hover, :focus-visible) {
+  box-shadow: var(--shadow-2);
+  transform: translateY(-10px);
+}
+
+.back-to-top-btn:is(.active) {
+  visibility: visible;
+  opacity: 1;
+  z-index: 4;
+}
+
+
+
+
+/*-----------------------------------*\
+  #MEDIA QUERIES
+\*-----------------------------------*/

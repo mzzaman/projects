@@ -1,0 +1,140 @@
+.container {
+    padding-inline: 1.6rem;
+}
+
+.hover-1,
+.hover-2 {
+    transition: var(--transition-1);
+}
+
+.hover-1:is(:hover, :focus-visible) {
+    color: var(--text-wild-blue-yonder);
+    transform: translateX(3px);
+}
+
+.hover-2:is(:hover, :focus-visible) {
+    color: var(--text-carolina-blue);
+}
+
+.profile-card {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.profile-card .profile-banner {
+    border-radius: var(--radius-circle);
+}
+
+
+.btn {
+    background-image: var(--gradient-2);
+    background-size: 200%;
+    background-position: left;
+    color: var(--text-white);
+    font-size: var(--fontSize-6);
+    font-weight: var(--weight-bold);
+    max-width: max-content;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    transition: var(--transition-1);
+}
+
+
+.btn:is(:hover, :focus-visible) {
+    background-position: right;
+}
+
+.btn-primary {
+    padding: 8px 16px;
+    border-radius: var(--radius-6);
+}
+
+.btn-secondary {
+    padding: 18px 30px;
+    border-radius: var(--radius-pill);
+}
+
+.img-holder {
+    aspect-ratio: var(--width) / var(--height);
+    overflow: hidden;
+}
+
+.img-cover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card {
+    background-color: var(--bg-oxford-blue);
+    border: 1px solid var(--border-prussian-blue);
+}
+
+.section {
+    padding-block: var(--section-padding);
+}
+
+.section-text {
+    font-size: var(--fontSize-3);
+    margin-block-end: 70px;
+}
+
+.grid-list {
+    display: grid;
+    gap: 30px;
+}
+
+.card-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    font-size: var(--fontSize-6);
+    margin-block: 20px;
+}
+
+.card-wrapper :is(.card-tag, .wrapper) {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+
+/* * Responsive for large than 575px screen */
+
+@media(min-width: 575px) {
+
+    .container {
+        max-width: 540px;
+        width: 100%;
+        margin-inline: auto;
+    }
+
+}
+
+/* * Responsive for large than 768px screen */
+
+@media(min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+/* * Responsive for large than 992px screen */
+
+@media(min-width: 992px) {
+    .container {
+        max-width: 930px;
+    }
+}
+
+/* * Responsive for large than 1200px screen */
+
+@media(min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+
+}

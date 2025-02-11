@@ -1,0 +1,140 @@
+.hero {
+    padding-block-start: calc(var(--section-padding) + 160px);
+}
+
+.hero .container {
+    display: grid;
+    gap: 50px;
+}
+
+
+.hero-subtitle {
+    font-size: var(--fontSize-6);
+    font-weight: var(--weight-bold);
+}
+
+.hero .section-title {
+    margin-block: 20px;
+}
+
+.hero .hero-text {
+    margin-block-end: 40px;
+}
+
+.hero .input-wrapper {
+    position: relative;
+    padding: 10px;
+    padding-inline-start: 20px;
+    background-color: var(--bg-prussian-blue);
+    border-radius: var(--radius-6);
+    border: 1px solid var(--bg-carolina-blue);
+    display: flex;
+    justify-items: flex-end;
+    transition: var(--transition-1);
+}
+
+.hero .input-wrapper:is(:hover) {
+    box-shadow: var(--shadow-2);
+}
+
+
+.hero .input-field {
+    padding-inline-end: 5px;
+}
+
+.hero-banner {
+    position: relative;
+}
+
+.hero-banner .img-cover {
+    max-width: max-content;
+    margin-inline: auto;
+}
+
+.hero .shape {
+    position: absolute;
+    z-index: -1;
+    animation: heroDecoAnim 3s linear infinite alternate;
+}
+
+@keyframes heroDecoAnim {
+    0% {
+        transform: translateY(40px) rotate(0);
+    }
+
+    100% {
+        transform: translateY(0) rotate(0.4turn);
+    }
+}
+
+.hero .shape-1 {
+    top: 50px;
+    right: 40px;
+}
+
+.hero .shape-2 {
+    bottom: 20px;
+    left: 24px;
+}
+
+.hero-bg {
+    display: none;
+}
+
+
+
+/* * Responsive for large than 575px screen */
+
+@media(min-width: 575px) {
+    .hero {
+        position: relative;
+    }
+
+    .hero .input-wrapper {
+        max-width: max-content;
+    }
+
+    .hero-bg {
+        display: block;
+        position: absolute;
+        pointer-events: none;
+    }
+
+    .hero-bg-1 {
+        top: 80px;
+        left: 0;
+    }
+
+    .hero-bg-2 {
+        bottom: -200px;
+        left: -20px;
+    }
+
+    .shape-2 {
+        left: 60px;
+    }
+}
+
+
+/* * Responsive for large than 992px screen */
+
+@media(min-width: 992px) {
+    .hero {
+        padding-inline-start: calc(var(--section-padding) + 80px);
+    }
+
+    .hero .container {
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+}
+
+
+/* * Responsive for large than 1200px screen */
+
+@media(min-width: 1200px) {
+    .hero .container {
+        max-width: 1050px;
+    }
+
+}

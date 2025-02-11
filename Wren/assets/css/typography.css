@@ -1,0 +1,38 @@
+.headline {
+    color: var(--text-columbia-blue);
+    line-height: var(--lineHeight-1);
+}
+
+.headline-1 {
+    font-size: var(--fontSize-1);
+    color: var(--text-alice-blue);
+    font-weight: var(--weight-extraBold);
+}
+
+.headline-2 {
+    font-size: var(--fontSize-2);
+}
+
+.headline-3 {
+    font-size: var(--fontSize-2);
+    line-height: var(--lineHeight-2);
+}
+
+.section-title {
+    margin-block-end: 10px;
+}
+
+.headline .span {
+    background-image: var(--gradient-1);
+    display: inline-block;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* * Responsive for large than 575px screen */
+
+@media(min-width: 575px) {
+    .headline-3 {
+        --fontSize-2: 2.4rem;
+    }
+}
