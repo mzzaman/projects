@@ -1,0 +1,68 @@
+:root {
+    /*TODO: Colors */
+
+    --rich-black-fogra-29: #0b111d;
+    --middle-blue-green_40: #86e4db66;
+    --midnight-green: #005761;
+    --midnight-green_a25: #00576140;
+    --independece: #565771;
+    --verdigris: #00adb3;
+    --ming: #116069;
+    --space-cadet: #222f59;
+    --eerie-black: #212121;
+    --alice-blue: #ecf3f4;
+    --gray-web: #808080;
+    --gainsboro: #dedede;
+    --white: #ffffff;
+    --white_a20: #ffffff33;
+    --white_a10: #ffffff1a;
+    --black: #000000;
+
+
+    /*TODO: Typography */
+
+    --ff-oswald: 'Oswald', sans-serif;
+    --ff-rubik: 'Rubik', sans-serif;
+
+    --headline-lg: 5rem;
+    --headline-md: 3rem;
+    --headline-sm: 2rem;
+    --title-lg: 1.8rem;
+    --title-md: 1.5rem;
+    --title-sm: 1.4rem;
+
+    --fw-500: 500;
+    --fw-700: 700;
+
+
+    /*TODO: Spacing */
+    --section-padding: 120px;
+
+    /*TODO: Shadow */
+    --shadow-1: 0px 2px 20px #9eb8d133;
+    --shadow-2: 0 4px 16px #0000000f;
+
+    /*TODO: Border Radius */
+    --radius-circle: 50%;
+    --radius-12: 12px;
+    --radius-6: 6px;
+    --radius-4: 4px;
+
+
+    /*TODO: Transition */
+    --transition-1: 0.25s ease;
+    --transition-2: 0.5s ease;
+    --transition-3: 1s ease;
+    --cubic-in: cubic-bezier(0.51, 0.03, 0.64, 0.28);
+    --cubic-out: cubic-bezier(0.05, 0.83, 0.52, 0.97);
+}
+
+
+/* Responsive for large than 768px screen */
+@media (min-width:768px) {
+    :root {
+
+        --headline-lg: 8rem;
+        --headline-md: 4.8rem;
+    }
+}

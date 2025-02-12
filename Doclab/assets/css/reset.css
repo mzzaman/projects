@@ -1,0 +1,77 @@
+*::before,
+*,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: var(--ff-rubik);
+    font-size: 10px;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--white);
+    color: var(--independece);
+    font-size: 1.6rem;
+    line-height: 1.8;
+    overflow: hidden;
+}
+
+body:is(.loaded) {
+    overflow-y: visible;
+}
+
+body:is(.nav-active) {
+    overflow: hidden;
+}
+
+li {
+    list-style: none;
+}
+
+a,
+img,
+time,
+button,
+input,
+span,
+ion-icon {
+    display: block;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    height: auto;
+}
+
+input,
+button {
+    background: none;
+    border: none;
+    font: inherit;
+}
+
+input {
+    width: 100%;
+    outline: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+ion-icon {
+    pointer-events: none;
+}
+
+address {
+    font-style: normal;
+}

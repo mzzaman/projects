@@ -1,0 +1,80 @@
+.about {
+    padding-block-end: 0;
+}
+
+.about .container {
+    display: grid;
+    gap: 2rem;
+}
+
+.about .section-text {
+    margin-block: 2rem 3.5rem;
+}
+
+.tab-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem 1.5rem;
+}
+
+.tab-btn {
+    background-color: var(--alice-blue);
+    color: var(--midnight-green);
+    padding: 7px 3rem;
+    border-radius: var(--radius-6);
+    font-weight: var(--fw-700);
+}
+
+.tab-btn:is(.active) {
+    background-color: var(--verdigris);
+    color: var(--white);
+}
+
+.tab-text {
+    color: var(--midnight-green);
+    margin-block: 3.5rem;
+}
+
+.about-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-block-end: 10px;
+}
+
+.about-item ion-icon {
+    color: var(--verdigris);
+    font-size: 2rem;
+    flex-shrink: 0;
+}
+
+
+/* Responsive for large than 768px screen */
+@media (min-width:768px) {
+    .about-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .about-banner {
+        max-width: max-content;
+        margin-inline: auto;
+    }
+}
+
+
+/* Responsive for large than 992px screen */
+@media (min-width:992px) {
+    .about .container {
+        grid-template-columns: 1fr 0.8fr;
+        align-items: flex-start;
+    }
+
+    .about-content {
+        padding-block-end: var(--section-padding);
+    }
+
+    .about-banner {
+        margin-inline-end: -9.3rem;
+    }
+}

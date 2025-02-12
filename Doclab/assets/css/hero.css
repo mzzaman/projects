@@ -1,0 +1,118 @@
+.hero-banner {
+    display: none;
+}
+
+
+.hero {
+    background-color: var(--midnight-green);
+    --section-padding: 20rem;
+
+}
+
+.hero-subtitle {
+    color: var(--white);
+    font-weight: var(--fw-700);
+    padding-inline-start: 8rem;
+}
+
+.hero-subtitle::before {
+    top: 50%;
+    left: 0;
+    width: 6rem;
+    height: 1px;
+    background-color: var(--white);
+}
+
+.hero-title {
+    margin-block: 2rem 3rem;
+    font-weight: var(--fw-700);
+}
+
+.hero-card {
+    background-color: var(--white);
+    border-radius: var(--radius-12);
+    padding: 2rem;
+}
+
+.hero-card .card-text {
+    color: var(--eerie-black);
+    border-block-end: 1px solid var(--midnight-green_a25);
+    padding-block-end: 1.2rem;
+    margin-block-end: 1.4rem;
+}
+
+.hero-card .input-wrapper {
+    position: relative;
+}
+
+.hero-card .input-field {
+    color: var(--eerie-black);
+    border-block-end: 1px solid var(--gainsboro);
+    padding-inline-end: 1.8rem;
+}
+
+.hero-card .input-wrapper ion-icon {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    color: var(--verdigris);
+}
+
+.hero-card .btn {
+    width: 100%;
+    justify-content: center;
+    margin-block-start: 1.6rem;
+}
+
+/* Responsive for large than 768px screen */
+@media (min-width:768px) {
+    .hero-title {
+        line-height: 1.125;
+    }
+
+    .hero .wrapper {
+        display: flex;
+        gap: 1.6rem;
+    }
+
+    .hero-card .input-wrapper {
+        flex-grow: 1;
+    }
+
+    .hero-card .input-field {
+        height: 100%;
+    }
+
+    .hero-card .btn {
+        max-width: max-content;
+        margin-inline-start: 0;
+    }
+}
+
+
+/* Responsive for large than 992px screen */
+@media (min-width:992px) {
+    .hero-banner {
+        display: block;
+        max-width: max-content;
+    }
+
+    .hero .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+}
+
+
+/* Responsive for large than 1200px screen */
+@media (min-width:1200px) {
+
+    .hero .container {
+        grid-template-columns: .8fr 1fr;
+        gap: 9.6rem;
+    }
+
+
+}
