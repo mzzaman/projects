@@ -1,0 +1,82 @@
+*::before,
+*,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-family: "Poppins", sans-serif;
+    /* font-size: 10px; */
+    scroll-behavior: smooth;
+    overscroll-behavior: contain;
+}
+
+body {
+    background-color: var(--white);
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    font: inherit;
+}
+
+button {
+    background: none;
+    font: inherit;
+    border: none;
+    cursor: pointer;
+}
+
+img,
+a,
+button,
+input,
+span,
+ion-icon {
+    display: block;
+}
+
+img {
+    height: auto;
+}
+
+ion-icon {
+    pointer-events: none;
+}
+
+input {
+    width: 100%;
+    font: inherit;
+}
+
+input::placeholder {
+    font: inherit;
+}
+
+/* *Scrollbar style */
+::-webkit-scrollbar {
+    width: 1.5rem;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--white);
+    border-left: 1px solid var(--cultured);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #cccccc;
+    border: 3px solid var(--white);
+    border-radius: 1rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #b3b3b3;
+}
