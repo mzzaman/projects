@@ -1,0 +1,74 @@
+:root {
+
+    /* TODO: Colors */
+
+    --cultured: #f7f7f7;
+    --french-bistre: #83715d;
+    --jet: #333333;
+    --bistre: #2e1b00;
+    --bistre_a75: #2e1b00bf;
+    --camel: #b49474;
+    --umber: #6b5c4c;
+    --golden-brown_a60: #a56c1d99;
+    --granite-gray: #616161;
+    --white: #ffffff;
+    --black: #000000;
+
+    /* TODO: Typography */
+
+    --ff-rosario: 'Rosario', sans-serif;
+    --ff-poppins: 'Poppins', sans-serif;
+
+    --fs-1: 5rem;
+    --fs-2: 4.2rem;
+    --fs-3: 3rem;
+    --fs-4: 2.6rem;
+    --fs-5: 1.8rem;
+
+    --fw-600: 600;
+    --fw-700: 700;
+
+
+    /*TODO: Spacing */
+
+    --section-padding: 12rem;
+
+
+    /*TODO: Shadow */
+    --shadow-1: 0px 0px 30px 0px #00000033;
+
+    /*TODO: Border Radius */
+
+    --radius-circle: 50%;
+    --radius-20: 20px;
+    --radius-16: 16px;
+    --radius-6: 6px;
+    --radius-4: 4px;
+    --btn-radius: 32px 6px;
+
+
+    /*TODO: Transition */
+
+    --transition-1: 0.25s ease;
+    --transition-2: 0.5s ease;
+    --cubic-in: cubic-bezier(0.51, 0.03, 0.64, 0.28);
+    --cubic-out: cubic-bezier(0.05, 0.83, 0.52, 0.97);
+}
+
+
+/* *Responsive for large than 768px */
+@media(min-width:768px) {
+    :root {
+        --fs-1: 6.5rem;
+    }
+}
+
+
+
+/* *Responsive for large than 992px */
+@media(min-width:992px) {
+    :root {
+        --fs-2: 4.8rem;
+        --fs-3: 3.5rem;
+    }
+}

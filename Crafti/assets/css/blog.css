@@ -1,0 +1,59 @@
+.blog .section-text {
+    margin-block: 2rem 3.6rem;
+}
+
+.blog .grid-list {
+    gap: 3rem;
+}
+
+.blog-card .card-banner {
+    border-radius: 50px 50px 0 0;
+}
+
+.blog-card .img-cover {
+    will-change: transform;
+}
+
+.blog-card:is(:hover, :focus-visible) .img-cover {
+    transform: scale(1.05) rotate(2deg);
+    opacity: .8;
+}
+
+.blog-card .blog-content {
+    padding: 1rem;
+}
+
+.blog-card .blog-title {
+    margin-block: 8px 2rem;
+}
+
+.blog-card :is(.blog-meta, .blog-meta-wrapper) {
+    display: flex;
+    align-items: center;
+}
+
+.blog-card .blog-meta {
+    flex-wrap: wrap;
+    column-gap: 4rem;
+}
+
+.blog-card .blog-meta-wrapper {
+    gap: 8px;
+}
+
+.blog-card .blog-meta-wrapper ion-icon {
+    color: var(--french-bistre);
+}
+
+.blog .btn {
+    margin-block-start: 8rem;
+    margin-inline: auto;
+}
+
+
+/* *Responsive for large than 1200px */
+@media(min-width:1200px) {
+    .blog .grid-list {
+        gap: 6rem;
+    }
+}

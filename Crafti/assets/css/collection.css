@@ -1,0 +1,26 @@
+.collection .section-text {
+    margin-block: 2rem 6rem;
+}
+
+.collection-card .card-banner {
+    border-radius: 25rem 25rem 2rem 2rem;
+    max-width: max-content;
+    margin-inline: auto;
+}
+
+.collection-card .card-title {
+    margin-block: 2rem;
+}
+
+.collection-card .btn {
+    margin-block-start: 2.4rem;
+    margin-inline: auto;
+}
+
+
+/* *Responsive for large than 992px */
+@media(min-width:992px) {
+    .collection .grid-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

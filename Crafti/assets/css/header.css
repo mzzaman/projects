@@ -1,0 +1,130 @@
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: var(--shadow-1);
+    background-color: var(--white);
+    padding-block: 1.6rem;
+    z-index: 4;
+}
+
+.header:is(.active) {
+    position: fixed;
+    animation: slideIn .5s ease forwards;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-open-btn {
+    font-size: 3.5rem;
+    color: var(--bistre);
+}
+
+.nav-open-btn ion-icon {
+    --ionicon-stroke-with: 2.6rem;
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    left: -35rem;
+    max-width: 35rem;
+    width: 100%;
+    background-color: var(--cultured);
+    height: 100vh;
+    padding: 1.6rem;
+    z-index: 2;
+    visibility: hidden;
+    transition: .25s var(--cubic-in);
+}
+
+.navbar:is(.active) {
+    visibility: visible;
+    transform: translateX(35rem);
+    transition: var(--cubic-out);
+}
+
+.nav-close-btn {
+    margin-inline-start: auto;
+    font-size: 2.4rem;
+    border: 1px solid var(--bistre);
+    color: var(--bistre);
+    padding: 8px;
+    border-radius: var(--radius-4);
+    margin-block-end: 2.4rem;
+}
+
+.navbar-link {
+    color: var(--black);
+    padding-block: 1rem;
+    transition: var(--transition-1);
+}
+
+.navbar-link:is(:hover, :focus-visible) {
+    color: var(--french-bistre);
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--black);
+    z-index: 1;
+    visibility: hidden;
+    opacity: 0;
+    transition: var(--transition-1);
+}
+
+
+.overlay:is(.active) {
+    visibility: visible;
+    opacity: .4;
+}
+
+
+
+/* *Responsive for large than 992px */
+@media(min-width:992px) {
+
+    .nav-close-btn,
+    .nav-open-btn,
+    .overlay {
+        display: none;
+    }
+
+    .header {
+        padding-block: 2rem;
+    }
+
+    .navbar,
+    .navbar:is(.active) {
+        all: unset;
+        display: block;
+    }
+
+    .navbar-list {
+        display: flex;
+        gap: 4rem;
+    }
+
+    .navbar-link {
+        color: var(--bistre);
+    }
+}

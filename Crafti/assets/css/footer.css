@@ -1,0 +1,78 @@
+.footer {
+    background-color: var(--bistre);
+    color: var(--white);
+}
+
+.footer-top {
+    display: grid;
+    gap: 3rem;
+    padding-block-end: 5rem;
+    border-block-end: 1px solid var(--french-bistre);
+}
+
+.footer .logo {
+    color: var(--french-bistre);
+    font-size: 3.2rem;
+}
+
+.footer-brand .footer-text {
+    margin-block: 2rem;
+}
+
+.social-list {
+    display: flex;
+    gap: 2rem;
+}
+
+.social-link {
+    color: var(--french-bistre);
+    font-size: 1.8rem;
+}
+
+.footer-list-title {
+    color: var(--french-bistre);
+    font-family: var(--ff-rosario);
+    font-size: 1.8rem;
+    font-weight: var(--fw-700);
+    margin-block-end: 2rem;
+}
+
+.footer-link {
+    padding-block: 7px;
+}
+
+.footer-list .footer-text {
+    margin-block-end: 2.4rem;
+}
+
+.footer-bottom {
+    padding-block: 4rem;
+    text-align: center;
+}
+
+.footer-bottom .copyright {
+    color: var(--french-bistre);
+    font-family: var(--ff-rosario);
+    font-size: var(--fs-5);
+}
+
+
+
+/* *Responsive for large than 768x */
+@media(min-width:768px) {
+    .footer-top {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+/* *Responsive for large than 1200px */
+@media(min-width:1200px) {
+    .footer-top {
+        grid-template-columns: 1fr .5fr .5fr .6fr;
+    }
+
+    .footer-brand {
+        padding-inline-end: 6rem;
+    }
+}
