@@ -1,0 +1,70 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: var(--base-fontSize);
+    scroll-behavior: smooth;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: var(--fontFamily-opensans);
+    background-color: var(--bg-white);
+    color: var(--text-granite-gray);
+    font-size: var(--fontSize-6);
+    line-height: 1.65;
+}
+
+li {
+    list-style: none;
+}
+
+a,
+span,
+img,
+ion-icon,
+button {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    height: auto;
+}
+
+input,
+button {
+    background: none;
+    border: none;
+    font: inherit;
+}
+
+input {
+    width: 100%;
+    outline: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+ion-icon {
+    pointer-events: none;
+}
+
+address {
+    font-style: normal;
+}
+
+::placeholder {
+    color: inherit;
+}

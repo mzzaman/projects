@@ -1,0 +1,69 @@
+.reservation .container {
+    display: grid;
+    gap: 50px;
+}
+
+
+.reservation .section-subtitle {
+    font-size: var(--fontSize-7);
+}
+
+.reservation .section-text {
+    margin-block: 20px 30px;
+}
+
+
+.booking-form {
+    display: grid;
+    gap: 30px;
+}
+
+.booking-form .input-wrapper {
+    background-color: var(--bg-isabelline);
+    color: var(--text-black);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    border: 1px solid var(--border-platinum);
+    border-radius: var(--radius-5);
+}
+
+
+.booking-form .input-wrapper::placeholder {
+    font-weight: var(--weight-semiBold);
+}
+
+.booking-form .input-wrapper ion-icon {
+    font-size: 2rem;
+    --ionicon-stroke-width: 40px;
+    color: var(--text-black);
+}
+
+/* Responsive for large than 768px Screen */
+@media(min-width:768px) {}
+
+/* Responsive for large than 992px Screen */
+
+@media(min-width: 992px) {
+    .reservation .container {
+        grid-template-columns: 1fr 1fr;
+        gap: 24px;
+    }
+}
+
+/* Responsive for large than 1200px Screen */
+
+@media(min-width: 1200px) {
+    .reservation .container {
+        gap: 60px;
+    }
+
+    .reservation .shape {
+        display: block;
+        position: absolute;
+        right: 0;
+        z-index: -1;
+        opacity: 0.2;
+    }
+}

@@ -1,0 +1,97 @@
+.popular {
+    background-color: var(--bg-sinopia);
+}
+
+.popular :is(.section-subtitle, .title) {
+    color: var(--text-white);
+}
+
+.popular .section-title {
+    margin-block-end: 50px;
+}
+
+.popular-card {
+    background-color: var(--bg-white);
+    padding: 30px 10px;
+    /* padding-block: 30px;
+    padding-inline: 10px; */
+    border-radius: var(--radius-12);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+}
+
+.popular-card .card-icon img {
+    width: 30px;
+}
+
+.popular-card .card-title {
+    color: var(--text-rich-black-fogra-29);
+    transition: var(--transition-1);
+}
+
+.popular-card .card-btn {
+    width: 40px;
+    height: 40px;
+    display: grid;
+    place-items: center;
+    border: 1px solid var(--border-cultured);
+    border-radius: var(--radius-5);
+    margin-inline-start: auto;
+    transition: var(--transition-1);
+}
+
+.popular-card:is(:hover, :focus-visible) .card-title {
+    color: var(--text-sinopia);
+}
+
+
+.popular-card:is(:hover, :focus-visible) .card-btn {
+    background-color: var(--bg-rich-black-fogra-29);
+    color: var(--text-white);
+}
+
+
+@media(min-width:575px) {
+    .popular .section-subtitle::before {
+        content: url('../images/white-right-arrow.png');
+    }
+
+    .popular .section-subtitle::after {
+        content: url('../images/white-left-arrow.png');
+    }
+
+    .popular-card .card-icon img {
+        width: 85px;
+    }
+
+    .popular-card .card-btn {
+        width: 55px;
+        height: 55px;
+        font-size: 2rem;
+    }
+}
+
+/* Responsive for large than 768px Screen */
+@media(min-width:768px) {
+    .popular .grid-list {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Responsive for large than 992px Screen */
+
+@media(min-width: 992px) {}
+
+/* Responsive for large than 1200px Screen */
+
+@media(min-width: 1200px) {
+    .popular .grid-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .popular-card {
+        padding-inline: 40px;
+    }
+}

@@ -1,0 +1,89 @@
+.hero .arrow {
+    display: none;
+}
+
+.hero {
+    background-color: var(--bg-seashell);
+    padding-block: 180px var(--section-spacing);
+}
+
+.hero .container {
+    display: grid;
+    gap: 40px;
+}
+
+.hero-content {
+    order: 1;
+}
+
+.hero .section-text {
+    margin-block: 35px 40px;
+}
+
+/* Responsive for large than 575px Screen */
+@media (min-width:575px) {
+    .hero {
+        position: relative;
+        z-index: 1;
+    }
+
+    .hero .shape {
+        position: absolute;
+        z-index: -1;
+    }
+
+    .hero .shape-1 {
+        display: block;
+        right: 20px;
+        bottom: 160px;
+        opacity: 0.04;
+    }
+
+    .hero .arrow {
+        display: block;
+    }
+
+    .hero .wrapper {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+}
+
+/* Responsive for large than 768px Screen */
+@media(min-width:768px) {}
+
+/* Responsive for large than 992px Screen */
+
+@media(min-width: 992px) {
+    .hero .container {
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+
+    .hero-content {
+        order: 0;
+    }
+
+    .hero .shape-1 {
+        right: auto;
+        left: 100px;
+    }
+
+    .hero .shape-2 {
+        display: block;
+        opacity: 0.04;
+        right: 50px;
+        bottom: 30px;
+    }
+}
+
+/* Responsive for large than 1200px Screen */
+
+@media(min-width: 1200px) {
+
+    .shape .shape-3 {
+        display: block;
+        right: 50px;
+    }
+}

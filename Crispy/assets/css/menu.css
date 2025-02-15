@@ -1,0 +1,99 @@
+.menu .section-title {
+    margin-block-end: 50px;
+}
+
+.section-wrapper {
+    display: grid;
+    gap: 50px;
+}
+
+.menu-item {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    row-gap: 20px;
+}
+
+/* Menu */
+.menu-item .title-wrapper {
+    display: flex;
+    align-items: baseline;
+    transition: var(--transition-2);
+}
+
+
+/* Menu */
+.rating-wrapper ion-icon,
+.title-wrapper:is(:hover, :focus-visible) {
+    color: var(--bg-sinopia);
+}
+
+.item-title,
+.price {
+    font-size: var(--fontSize-5);
+    font-weight: var(--weight-regular);
+}
+
+.menu-text {
+    margin-block: 10px;
+}
+
+.rating-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2px;
+}
+
+.rating-text {
+    margin-inline-start: 10px;
+}
+
+@media(min-width:575px) {
+    .menu .section-subtitle::before {
+        content: url('../images/right-arrow.png');
+    }
+
+    .menu .section-subtitle::after {
+        content: url('../images/left-arrow.png');
+    }
+
+    .menu-item {
+        gap: 30px;
+    }
+
+    .menu .item-content {
+        flex-grow: 1;
+    }
+}
+
+/* Responsive for large than 768px Screen */
+@media(min-width:768px) {
+
+    .menu-banner,
+    .reservation-banner {
+        max-width: max-content;
+    }
+}
+
+/* Responsive for large than 992px Screen */
+
+@media(min-width: 992px) {
+    .menu .section-wrapper {
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        gap: 24px;
+    }
+
+    .menu-item {
+        flex-wrap: nowrap;
+    }
+}
+
+/* Responsive for large than 1200px Screen */
+
+@media(min-width: 1200px) {
+    .menu .section-wrapper {
+        gap: 60px;
+    }
+}
