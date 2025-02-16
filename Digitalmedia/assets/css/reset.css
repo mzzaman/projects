@@ -1,0 +1,66 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-family: var(--fontFamily-open-sans);
+    font-size: 62.5%;
+    /*  1rem = 10px; */
+    scroll-behavior: smooth;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--bg-dark-purple);
+    color: var(--text-white-alpha-60);
+    font-size: var(--fontSize-6);
+    line-height: 1.8;
+}
+
+body :where(.nav-active) {
+    overflow: hidden;
+}
+
+:where(li) {
+    list-style: none;
+}
+
+:where(a, img, span, input, ion-icon, button) {
+    display: block;
+}
+
+:where(a) {
+    text-decoration: none;
+    color: inherit;
+}
+
+:where(img) {
+    height: auto;
+}
+
+:where(input, button) {
+    background: none;
+    border: none;
+    font: inherit;
+}
+
+:where(input) {
+    width: 100%;
+    outline: none;
+}
+
+:where(button) {
+    cursor: pointer;
+}
+
+:where(ion-icon) {
+    pointer-events: none;
+}
+
+:where(address) {
+    font-style: normal;
+}

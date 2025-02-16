@@ -1,0 +1,33 @@
+.process .process-banner {
+    display: none;
+}
+
+.process {
+    position: relative;
+    z-index: 1;
+}
+
+.process::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/process-bg.png');
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+    pointer-events: none;
+    z-index: -1;
+}
+
+
+.process-item .process-icon {
+    margin-inline: auto;
+    filter: var(--shadow-1);
+}
+
+.process-item .process-item-title {
+    margin-block: 20px 10px;
+}

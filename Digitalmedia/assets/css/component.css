@@ -1,0 +1,68 @@
+.container {
+    padding-inline: 16px;
+}
+
+.section {
+    padding-block-end: var(--section-spacing);
+}
+
+.btn {
+    height: 62px;
+    padding-inline: 50px;
+    font-weight: var(--weight-semiBold);
+    border-radius: var(--radius-pill);
+    color: var(--text-black);
+    display: grid;
+    place-items: center;
+    max-width: max-content;
+    transition: var(--transition-1);
+}
+
+.btn-primary {
+    background-color: var(--bg-sunglow);
+}
+
+.btn:is(:hover, :focus-visible) {
+    background-color: var(--bg-vivid-violet);
+    color: var(--text-white);
+}
+
+/* Image */
+.w-100 {
+    width: 100%;
+}
+
+
+/* Process */
+.text-center {
+    text-align: center;
+}
+
+.section-text {
+    margin-block: 15px 50px;
+}
+
+.process-list {
+    display: grid;
+    gap: 50px;
+}
+
+
+/* Work */
+.img-holder {
+    aspect-ratio: var(--width) / var(--height);
+    background-color: var(--bg-white-alpha-10);
+    overflow: hidden;
+}
+
+.img-cover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition-2);
+}
+
+.work-list {
+    display: grid;
+    gap: 30px;
+}

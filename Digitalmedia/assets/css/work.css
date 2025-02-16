@@ -1,0 +1,23 @@
+.work-card :where(.card-banner) {
+    border-radius: var(--radius-40);
+    margin-block-end: 20px;
+}
+
+
+.work-card:is(:hover, :focus-within) :where(.img-cover) {
+    transform: scale(1.1);
+}
+
+.work-card :where(.card-title) {
+    margin-block-end: 12px;
+    transition: var(--transition-1);
+}
+
+.work-card :where(.card-title):is(:hover, :focus-visible) {
+    color: var(--text-sunglow);
+}
+
+.work :where(.btn) {
+    margin-block-start: 60px;
+    margin-inline: auto;
+}
