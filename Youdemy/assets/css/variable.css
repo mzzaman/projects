@@ -1,0 +1,82 @@
+:root {
+    /* TODO: Colors */
+
+    --selective-yellow: #ffbc1f;
+    --roman-silver: #7b7b8a;
+    --roman-silver_10: #7b7b8a1a;
+    --light-coral: #ff8086;
+    --oxford-blue: #0c1327;
+    --light-gray: #cccccc;
+    --keppei: #30c0af;
+    --white: #ffffff;
+    --black: #000000;
+    --black_10: #0000001a;
+
+
+    /* TODO: Typography */
+
+    --ff-gilroy: "Gilroy", sans-serif;
+
+    --headline-lg: 4.8rem;
+    --headline-md: 3rem;
+    --headline-sm: 2.4rem;
+    --title-lg: 2.2rem;
+    --title-md: 2rem;
+    --title-sm: 1.8rem;
+
+    --fw-500: 500;
+    --fw-600: 600;
+    --fw-700: 700;
+
+
+    /* TODO:  Spacing*/
+
+    --section-padding: 56px;
+
+    /* TODO: Shadow */
+
+    --shadow-1: 0px 35px 65px -10px #0000000d;
+    --shadow-2: 0 10px 40px #0000000f;
+
+    /* TODO: Border Radius */
+
+    --radius-4: 4px;
+    --radius-6: 6px;
+    --radius-8: 8px;
+    --radius-circle: 50%;
+
+    /* TODO: Transition*/
+
+    --transition: 0.25s ease;
+    --cubic-in: cubic-bezier(0.51, 0.03, 0.64, 0.28);
+    --cubic-out: cubic-bezier(0.05, 0.83, 0.52, 0.97);
+}
+
+
+/*
+* responsive for large than 768px screen
+*/
+
+@media(min-width: 768px) {
+    :root {
+        --headline-lg: 6rem;
+        --headline-md: 3.8rem;
+
+
+        --section-padding: 8rem;
+    }
+}
+
+
+/*
+* responsive for large than 992px screen
+*/
+
+@media(min-width: 992px) {
+    :root {
+        --headline-lg: 7.7rem;
+        --headline-md: 4.4rem;
+
+        --section-padding: 12rem;
+    }
+}

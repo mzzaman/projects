@@ -1,0 +1,51 @@
+.hero-banner {
+    display: none;
+}
+
+.hero {
+    padding-block-start: calc(var(--section-padding) + 9.6rem);
+}
+
+.hero .title-md {
+    font-weight: var(--fw-500);
+    padding-inline-start: 1.6rem;
+    margin-block: 2.4rem 4.4rem;
+}
+
+.hero .title-md::before {
+    content: "";
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background-color: var(--light-coral);
+}
+
+.hero .btn-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+
+/*
+* responsive for large than 1200px screen
+*/
+
+@media(min-width: 1200px) {
+    .hero-banner {
+        display: block;
+        max-width: max-content;
+        margin-inline-end: -14%;
+    }
+
+    .hero .container {
+        display: grid;
+        grid-template-columns: 1fr 0.9fr;
+        gap: 48px;
+    }
+
+    .hero .title-md {
+        margin-block: 40px 60px;
+    }
+}

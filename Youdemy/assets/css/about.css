@@ -1,0 +1,69 @@
+.about .container {
+    display: grid;
+    gap: 30px;
+
+}
+
+.about .section-text,
+.progress-list li:not(:last-child) {
+    margin-block-end: 3.2rem;
+}
+
+.progress-label-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-block-end: 8px;
+}
+
+.progress-label-wrapper .title-sm {
+    color: var(--oxford-blue);
+    font-weight: var(--fw-600);
+}
+
+.progress {
+    background-color: var(--roman-silver_10);
+    height: 6px;
+    border-radius: var(--radius-6);
+}
+
+.progress-fill {
+    height: 100%;
+    border-radius: inherit;
+}
+
+.progress-fill:is(.red) {
+    background-color: var(--light-coral);
+    width: 86%;
+}
+
+.progress-fill:is(.green) {
+    background-color: var(--keppei);
+    width: 67%;
+}
+
+.progress-fill:is(.yellow) {
+    background-color: var(--selective-yellow);
+    width: 95%;
+}
+
+/*
+* responsive for large than 992px screen
+*/
+
+@media(min-width: 992px) {
+    .about .container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+/*
+* responsive for large than 1200px screen
+*/
+
+@media(min-width: 1200px) {
+    .about .container {
+        grid-template-columns: 1fr 0.7fr;
+    }
+}

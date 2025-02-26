@@ -1,0 +1,65 @@
+*::before,
+*,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+
+html {
+    scroll-behavior: smooth;
+    font-family: var(--ff-gilroy);
+    font-size: 10px;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--white);
+    color: var(--roman-silver);
+    font-size: 1.6rem;
+    line-height: 1.5;
+    overflow: hidden;
+}
+
+
+body:is(.loaded) {
+    overflow: visible;
+}
+
+body:is(.nav-active) {
+    overflow: hidden;
+}
+
+li {
+    list-style: none;
+}
+
+a,
+img,
+span,
+input,
+button,
+ion-icon {
+    display: block;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    height: auto;
+}
+
+button {
+    background: none;
+    border: none;
+    font: inherit;
+    cursor: pointer;
+}
+
+input {
+    width: 100%;
+}

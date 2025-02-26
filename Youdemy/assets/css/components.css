@@ -1,0 +1,161 @@
+.container {
+    padding-inline: 1.6rem;
+}
+
+
+.section {
+    padding-block: var(--section-padding);
+}
+
+.has-bg-image {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.has-before,
+.has-after {
+    position: relative;
+    z-index: -1;
+}
+
+.has-before::before,
+.has-after::after {
+    content: "";
+    position: absolute;
+}
+
+.btn {
+    max-width: max-content;
+    font-weight: var(--fw-500);
+    padding: 12px 24px;
+    border-radius: var(--radius-6);
+    transition: var(--transition);
+    outline: none;
+}
+
+.btn-primary {
+    --bg: var(--light-coral);
+    color: var(--white);
+    background-color: var(--bg);
+}
+
+.btn-secondary {
+    --bg: var(--oxford-blue);
+    color: var(--white);
+    background-color: var(--bg);
+}
+
+.btn-tertiary {
+    --bg: var(--white);
+    color: var(--oxford-blue);
+    background-color: var(--bg);
+    font-weight: var(--fw-600);
+}
+
+:is(.btn-primary, .btn-secondary):is(:hover, :focus-visible) {
+    box-shadow: 0 0 0 2px var(--white), 0 0 0 5px var(--bg);
+}
+
+.img-holder {
+    aspect-ratio: var(--width) / var(--height);
+    overflow: hidden;
+}
+
+.img-full {
+    width: 100%;
+}
+
+.img-cover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.grid-list {
+    display: grid;
+    gap: 3rem;
+}
+
+.card {
+    position: relative;
+    background-color: var(--white);
+    padding: 2.4rem;
+    border-radius: var(--radius-8);
+    transition: var(--transition);
+}
+
+.card:is(:hover, :focus-visible) {
+    box-shadow: var(--shadow-1);
+}
+
+.layer-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+/*
+* responsive for large than 575px screen
+*/
+
+@media(min-width: 575px) {
+    .container {
+        max-width: 640px;
+        width: 100%;
+        margin-inline: auto;
+    }
+
+    .card {
+        padding: 32px;
+    }
+}
+
+
+/*
+* responsive for large than 768px screen
+*/
+
+@media(min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+
+    .grid-list {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+/*
+* responsive for large than 992px screen
+*/
+
+@media(min-width: 992px) {
+    .container {
+        max-width: 1024px;
+    }
+
+    .btn {
+        padding: 1.6rem 3.2rem;
+        font-size: 1.8rem;
+    }
+
+
+    .grid-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/*
+* responsive for large than 1200px screen
+*/
+
+@media(min-width: 1200px) {
+    .container {
+        max-width: 1170px;
+    }
+}

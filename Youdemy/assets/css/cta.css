@@ -1,0 +1,48 @@
+.cta {
+    background-color: var(--keppei);
+    padding: 48px 24px;
+    text-align: center;
+}
+
+.cta .heading-md {
+    color: var(--white);
+}
+
+.cta .btn {
+    margin-inline: auto;
+}
+
+
+/*
+* responsive for large than 768px screen
+*/
+
+@media(min-width: 768px) {
+    .cta {
+        padding-block: 7.8rem;
+    }
+}
+
+/*
+* responsive for large than 1200px screen
+*/
+
+@media(min-width: 1200px) {
+    .cta {
+        text-align: left;
+    }
+
+    .cta .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .cta .heading-md {
+        max-width: 22ch;
+    }
+
+    .cta .btn {
+        margin-inline: 0;
+    }
+}

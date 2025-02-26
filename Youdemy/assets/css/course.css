@@ -1,0 +1,69 @@
+.course .grid-list {
+    padding-block: 2.8rem 4.4rem;
+}
+
+
+.course-card {
+    border-block-end: 4px solid transparent;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+}
+
+.course-card:is(:hover, :focus-visible) {
+    border-color: var(--light-coral);
+}
+
+.course-card .card-banner {
+    height: 160px;
+    background-color: var(--light-gray);
+    border-radius: var(--radius-4);
+    overflow: hidden;
+}
+
+.course-card :is(.wrapper, .rating-wrapper) {
+    display: flex;
+    align-items: center;
+}
+
+.course-card .wrapper {
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.course-card .rating-wrapper {
+    gap: 4px;
+}
+
+.course-card .card-price {
+    color: var(--light-coral);
+}
+
+.course-card .card-title {
+    margin-block: 8px 16px;
+}
+
+.course-card .card-meta {
+    justify-content: flex-end;
+}
+
+.course-card .card-meta .title-sm {
+    display: flex;
+    gap: 4px;
+}
+
+.course .btn {
+    margin-inline: auto;
+}
+
+
+/*
+* responsive for large than 992px screen
+*/
+
+@media(min-width: 992px) {
+    .course .grid-list {
+        grid-template-columns: 1fr 1fr;
+        margin-block: 40px 48px;
+    }
+}
