@@ -1,0 +1,139 @@
+.container {
+    padding-inline: 1.6rem;
+}
+
+/* header btn-hover */
+.btn-hover {
+    position: relative;
+    z-index: 1;
+}
+
+.btn-hover::after,
+.btn-hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    transition: var(--transition-1);
+    will-change: transform;
+    pointer-events: none;
+}
+
+.btn-hover::after {
+    border: 1px solid var(--bg-white);
+    transform: scale(1.2);
+    opacity: 0;
+}
+
+.btn-hover:is(:hover, :focus-visible)::before {
+    transform: scale(0.5);
+    opacity: 0;
+}
+
+.btn-hover:is(:hover, :focus-visible)::after {
+    transform: scale(1);
+    opacity: 1;
+}
+
+/* Hero */
+
+.has-before,
+.has-after {
+    position: relative;
+    z-index: 1;
+}
+
+.has-before::before,
+.has-after::after {
+    content: "";
+    position: absolute;
+}
+
+.img-holder {
+    aspect-ratio: var(--width) / var(--height);
+    overflow: hidden;
+    background-color: var(--bg-jet);
+
+}
+
+.img-cover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+[data-tilt] {
+    transition: var(--transition-3);
+}
+
+.btn {
+    color: var(--text-white);
+    font-size: var(--fontSize-9);
+    font-weight: var(--weight-medium);
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    max-width: max-content;
+    height: 56px;
+    padding-inline: 30px;
+}
+
+.btn::before {
+    background-color: var(--bg-smoky-black);
+}
+
+.btn ion-icon {
+    font-size: 1.8rem;
+
+    --ionicon-stroke-width: 50px;
+}
+
+/* About */
+.section {
+    padding-block: var(--section-spacing);
+    overflow-x: hidden;
+}
+
+
+/* Responsive for larger than 600px */
+@media(min-width: 575px) {
+
+    .container {
+        max-width: 540px;
+        width: 100%;
+        margin-inline: auto;
+    }
+
+
+}
+
+/* Responsive for larger than 768px */
+@media(min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+/* Responsive for larger than 992px */
+@media(min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+/* Responsive for larger than 1200px */
+@media(min-width: 1200px) {
+    .container {
+        max-width: 1200px;
+    }
+}
+
+/* Responsive for larger than 1400px */
+@media(min-width: 1400px) {
+    .container {
+        max-width: 1320px;
+    }
+}

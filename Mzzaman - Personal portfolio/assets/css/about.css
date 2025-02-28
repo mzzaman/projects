@@ -1,0 +1,220 @@
+.tab-container {
+    border: 1px solid var(--border-eerie-black);
+}
+
+.tab-btn {
+    width: 100%;
+    padding-block: 16px;
+    border-block-end: 1px solid var(--border-eerie-black);
+    transition: var(--transition-1);
+}
+
+.tab-btn:is(:hover, :focus-visible, .active) {
+    background-color: var(--bg-eerie-black);
+}
+
+.tab-content {
+    display: none;
+    padding: 30px;
+}
+
+
+.tab-content:is(.active) {
+    display: block;
+    animation: fade 500ms linear forwards;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.tab-content .grid-list {
+    display: grid;
+    gap: 30px;
+}
+
+.tab-content .section-title {
+    margin-block-end: 30px;
+}
+
+
+.tab-content .section-text,
+.about-item:not(:last-child) {
+    margin-block-end: 20px;
+}
+
+.about-item .span {
+    line-height: 1.4;
+}
+
+.social-list {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.social-link {
+    color: var(--text-white);
+}
+
+/* Skill */
+.skill-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-block: 30px 12px;
+}
+
+.skill-wrapper .span {
+    font-family: var(--fontFamily-recoleta);
+    font-weight: var(--weight-medium);
+}
+
+.progress-bar {
+    background-color: var(--bg-smoky-black);
+    height: 4px;
+}
+
+.progress-fill {
+    background-color: var(--bg-white);
+    height: 100%;
+}
+
+/* Interview */
+
+.interview-card {
+    position: relative;
+}
+
+.interview-card .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 60px;
+    justify-content: center;
+    border-radius: var(--radius-circle);
+    color: var(--text-smoky-black);
+    text-transform: capitalize;
+}
+
+.interview-card .btn::before,
+.interview-card .btn::after {
+    border-radius: inherit;
+
+}
+
+.interview-card .btn::before {
+    background-color: var(--bg-white);
+}
+
+.interview-card .btn:is(:hover, :focus-visible) {
+    color: var(--text-white);
+}
+
+
+/* Exhibition */
+
+.exhibition-card {
+    position: relative;
+}
+
+.exhibition-card .card-icon {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    background-color: var(--bg-white);
+    width: 40px;
+    height: 40px;
+    border-radius: var(--radius-circle);
+    color: var(--bg-smoky-black);
+    display: grid;
+    place-items: center;
+
+}
+
+
+/* Responsive for larger than 600px */
+@media(min-width: 575px) {
+
+    /** About  */
+    .tab-btn-list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .tab-btn-item {
+        width: 50%;
+        flex-grow: 1;
+    }
+
+
+    .tab-btn-item:nth-child(2n) {
+        border-block-start: 1px solid var(--border-eerie-black);
+    }
+
+
+    .tab-content {
+        padding: 40px;
+    }
+
+    .about-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+    .interview-card {
+        max-width: max-content;
+        margin-inline: auto;
+    }
+
+}
+
+
+/* Responsive for larger than 768px */
+@media(min-width: 768px) {
+
+    .tab-btn-item {
+        width: 20%;
+    }
+
+    .tab-btn-item:not(:first-child) {
+        border-inline-start: 1px solid var(--border-eerie-black);
+    }
+
+    :is([data-tab-content="interview"], [data-tab-content="exhibition"]) .grid-list {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+/* Responsive for larger than 992px */
+@media(min-width: 992px) {
+    .tab-content .grid-list {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    :is([data-tab-content="interview"], [data-tab-content="exhibition"], [data-tab-content="awward"]) .grid-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+/* Responsive for larger than 1200px */
+@media(min-width: 1200px) {
+    .tab-content {
+        padding: 60px;
+    }
+
+    .tab-content .grid-list {
+        gap: 50px;
+    }
+}

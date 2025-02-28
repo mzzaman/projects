@@ -1,0 +1,130 @@
+:root {
+    /* TODO: Colors */
+
+    /** Background color */
+
+    --bg-white: hsla(0, 0%, 100%, 1);
+    --bg-light-gray: hsla(240, 1%, 83%, 1);
+    --bg-jet: hsla(0, 0%, 18%, 1);
+    --bg-eerie-black: hsla(0, 0%, 13%, 1);
+    --bg-rich-black-fogra-29: hsla(229, 23%, 9%, 1);
+    --bg-smoky-black: hsla(0, 0%, 6%, 1);
+    --bg-black: hsla(0, 0%, 0%, 1);
+
+    /** Gradient color  */
+
+    --gradient-1: linear-gradient(to top, var(--bg-black) 0%, transparent 40%);
+    --gradient-2: radial-gradient(circle at 75% 100%, hsla(79, 100%, 70%, 0.3) 0%, transparent 100%);
+
+    /** Text color  */
+
+    --text-white: hsla(0, 0%, 100%, 1);
+    --text-light-gray: hsla(240, 1%, 83%, 1);
+    --text-rich-black-fogra-29: hsla(216, 42%, 12%, 1);
+    --text-smoky-black: hsla(0, 0%, 6%, 1);
+    --text-black: hsla(0, 0%, 0%, 1);
+
+    /** Border color */
+
+    --border-white: hsla(0, 0%, 100%, 1);
+    --border-light-gray: hsla(240, 1%, 83%, 1);
+    --border-gainsboro: hsla(220, 13%, 91%, 1);
+    --border-eerie-black: hsla(0, 0%, 13%, 1);
+    --border-smoky-black: hsla(0, 0%, 6%, 1);
+
+    /*TODO: Typography  */
+
+    /** FONT-FAMILY */
+    --fontFamily-recoleta: 'Recoleta';
+    --fontFamily-roboto: 'Roboto', sans-serif;
+
+    /** FONT-SIZE */
+
+    --fontSize-1: 4.6rem;
+    --fontSize-2: 4.5rem;
+    --fontSize-3: 4rem;
+    --fontSize-4: 3rem;
+    --fontSize-5: 2.4rem;
+    --fontSize-6: 1.8rem;
+    --fontSize-7: 2rem;
+    --fontSize-8: 1.6rem;
+    --fontSize-9: 1.5rem;
+    --fontSize-10: 1.4rem;
+
+    --primary-fontSize: 10px;
+
+    /** FONT-WEIGHT  */
+
+    --weight-regular: 400;
+    --weight-medium: 500;
+
+    /** SPACING  */
+    --section-spacing: 70px;
+
+
+    /** BORDER-RADIUS  */
+    --radius-pill: 500px;
+    --radius-circle: 50%;
+
+    /** Transition  */
+
+    --transition-1: 0.25s ease;
+    --transition-2: 0.5s ease;
+    --transition-3: 1000ms cubic-bezier(0.03, 0.98, 0.52, 0.99) 0s;
+    --cubic-in: cubic-bezier(0.51, 0.03, 0.64, 0.28);
+    --cubic-out: cubic-bezier(0.05, 0.83, 0.52, 0.97);
+
+
+
+}
+
+
+/* Responsive for larger than 600px */
+@media(min-width: 575px) {
+
+    :root {
+
+        /** Font Size  */
+
+        --fontSize-1: 5.6rem;
+        --fontSize-5: 3.2rem;
+    }
+
+}
+
+/* Responsive for larger than 768px */
+@media(min-width: 768px) {
+    :root {
+
+        /** Font Size  */
+
+        --fontSize-1: 6.6rem;
+        /** Spacing  */
+        --section-spacing: 100px;
+    }
+
+}
+
+
+/* Responsive for larger than 992px */
+@media(min-width: 992px) {
+    :root {
+        --fontSize-2: 7rem;
+    }
+}
+
+
+
+/* Responsive for larger than 1200px */
+@media(min-width: 1200px) {
+    :root {
+        --fontSize-2: 9rem;
+        --fontSize-4: 4rem;
+        --fontSize-5: 4rem;
+        --fontSize-6: 2rem;
+    }
+}
+
+
+/* Responsive for larger than 1400px */
+@media(min-width: 1400px) {}

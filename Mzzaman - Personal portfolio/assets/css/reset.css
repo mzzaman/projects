@@ -1,0 +1,92 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+
+html {
+    scroll-behavior: smooth;
+    font-size: var(--primary-fontSize);
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--bg-black);
+    color: var(--text-light-gray);
+    font-family: var(--fontFamily-roboto);
+    font-size: var(--fontSize-8);
+    line-height: 1.75;
+    overflow: hidden;
+}
+
+body:is(.loaded) {
+    overflow-y: auto;
+}
+
+body:is(.nav-active) {
+    overflow: hidden;
+}
+
+/* Scroll bar  */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    border-inline-start: 1px solid var(--border-eerie-black);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--bg-white);
+}
+
+li {
+    list-style: none;
+}
+
+a,
+img,
+span,
+input,
+button,
+textarea,
+ion-icon {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    height: auto;
+}
+
+input,
+button,
+textarea {
+    background: none;
+    border: none;
+    font: inherit;
+}
+
+input,
+textarea {
+    width: 100%;
+}
+
+button {
+    cursor: pointer;
+}
+
+ion-icon {
+    pointer-events: none;
+}
+
+address {
+    font-style: normal;
+}
